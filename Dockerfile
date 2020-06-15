@@ -9,7 +9,7 @@ RUN apt-get update && \
     wget -O /tmp/siastream.zip ${URL} && \
     cd /siastream && \
     unzip /tmp/siastream.zip && \
-    rm -rf /tmp/sia/ /tmp/sia.zip /var/lib/apt/lists
+    rm -rf /tmp/siastream.zip /var/lib/apt/lists
 
 WORKDIR /siastream
 EXPOSE 3000
